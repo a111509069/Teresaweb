@@ -1,0 +1,83 @@
+<html>
+<head>
+	<title> WEBSITE CSS </title>
+	<link rel="stylesheet" type="text/css"
+	media="all" href="style7.css">
+</head>
+<body>
+	<div id="layout">
+		<div id="header">
+		<img src="image/header.jpg" class="header">
+		</div>
+		<div id="menu">
+			<ul>
+			<li><a href="index7.html">Beranda</a></li>
+				<li><a href="profil.html">Biodata</a></li>
+				<li><a href="tabelKRS.html">KRS</a></li>
+				<li><a href="kontak.html">Pendaftaran Admin</a></li>
+			</ul>
+			</div>
+		<div id="runningtext">
+		<marquee behavior="scroll" scrollamount="3" onmouseover="this.stop();" onmouseout="this.start();" direction="left">
+			Selamat Datang di Website TERESA ENADES HARI SETIA
+		</marquee>
+		</div>
+		<div id="kontak">
+			<div class="kontak">
+			<h2> Form Pendaftaran Admin</h2>
+				<form>
+				<form action="form.php" method="get">
+				<table class="tablekontak">
+				<tr>
+				
+					<td class="kolom1"> Nama Lengkap </td>
+					<td class="kolom2"> <INPUT TYPE=text NAME=txtNama size="50"> </td>
+				</tr>
+				<tr>
+					<td>TTL</td>
+					<td><input type="date" name="tempat_lahir ">
+					<select name="tempat_lahir">
+					<option value="Jakarta"> Jakarta</option>
+					<option value="Bandung"> Bangka</option>
+					<option value="Bali" selected> Bali</option>
+				</select>
+		<br></td>
+		</tr>
+		<tr>
+		<td>Jenis Kelamin </td>
+		<td><input type="radio" name="sex">laki-laki
+				<input type="radio" name="sex">perempuan</td><br>
+		</tr>
+		<tr>
+		<td>Agama</td><td><select>
+			<option name="agama" value="islam">Islam</option>
+			<option name="agama" value="katolik">Katolik</option>
+			<option name="agama" value="hindu">Hindu</option>
+			<option name="agama" value="budha">Budha</option>
+			<option name="agama" value="kristen">Kristen</option>
+			  </select></td><br>
+		</tr>  
+		<tr>
+		<td>Keahlian</td>
+		<td><input type="checkbox" name="keahlian" value="menari" /> Menari
+				<input type="checkbox" name="keahlian" value="memasak" checked /> Memasak
+				<input type="checkbox" name="keahlian" value="berenang" /> Berenang</td><br>
+		</tr>
+		<tr>
+		<td>Deskripsi Diri</td>
+		<td><textarea name="deskripsi" rows="10" cols="50">
+				</textarea></td>
+		</tr>
+		<tr>
+		<td colspan="3" align="center" style="border-radius:50px"><input type="submit" value="SIMPAN">
+		 <input type="reset" value="BATAL"></td>
+		</tr>
+				
+			</table>
+			</form>
+			</div>
+		</div>
+		<div id="footer"> &copy 2018 TERESA </div>
+	</div>
+</body>
+</html>
